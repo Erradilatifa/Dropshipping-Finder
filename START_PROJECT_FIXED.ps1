@@ -72,8 +72,8 @@ Write-Host "   Backend:   http://localhost:8000" -ForegroundColor Cyan
 Write-Host "   Admin:     http://localhost:8000/admin" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "👤 Comptes de test:" -ForegroundColor White
-Write-Host "   Email:     image@gmail.com" -ForegroundColor Cyan
-Write-Host "   Password:  (votre mot de passe)" -ForegroundColor Cyan
+Write-Host "   Email:     test@test.com" -ForegroundColor Cyan
+Write-Host "   Password:  test123456" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "🔧 Actions importantes:" -ForegroundColor White
 Write-Host "   1. Videz le cache du navigateur (Ctrl+Shift+Delete)" -ForegroundColor Yellow
@@ -82,4 +82,4 @@ Write-Host "   3. Rechargez la page (Ctrl+F5)" -ForegroundColor Yellow
 Write-Host ""
 Write-Host "============================================================" -ForegroundColor Cyan
 Write-Host "Appuyez sur une touche pour fermer cette fenetre..." -ForegroundColor Gray
-Read-Host "Appuyez sur Entree pour continuer"
+$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")

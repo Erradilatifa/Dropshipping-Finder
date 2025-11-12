@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     # Third party apps
     'rest_framework',
     'rest_framework_simplejwt',
@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'django_celery_beat',
-    
+
     # Local apps
     'api',
     'core',
@@ -246,4 +246,3 @@ LOGGING = {
 
 # Create logs directory if it doesn't exist
 os.makedirs(BASE_DIR / 'logs', exist_ok=True)
-
